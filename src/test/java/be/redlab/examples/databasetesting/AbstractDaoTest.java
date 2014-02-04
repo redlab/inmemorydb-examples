@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 Balder Van Camp
+ * Copyright 2014 Balder Van Camp
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -12,6 +12,7 @@
  */
 package be.redlab.examples.databasetesting;
 
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.unitils.UnitilsJUnit4TestClassRunner;
 import org.unitils.spring.annotation.SpringApplicationContext;
@@ -25,4 +26,12 @@ import org.unitils.spring.annotation.SpringApplicationContext;
 @RunWith(UnitilsJUnit4TestClassRunner.class)
 @SpringApplicationContext({ "classpath:config-memorytest.xml" })
 public abstract class AbstractDaoTest {
+
+	/**
+	 * Force location for h2's db files this way they are removed on clean. ( so not really in memory hé?)
+	 */
+	@BeforeClass
+	public static final void before() {
+		System.setProperty("h2.baseDir", "./target/");
+	}
 }
