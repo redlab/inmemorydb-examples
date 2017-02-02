@@ -1,7 +1,8 @@
+**Warning** this is a bit outdated and from the pre Spring Boot Starters area. This kind of setup is now almost automagically supported by Spring Data & Spring Boot Starters.
+
+
 inmemorydb-examples
 ===================
-
-**Warning** this is a bit outdated and from the pre Spring Boot Starters area. This kind of setup is now almost automagically supported by Spring Data & Spring Boot Starters.
 
 An example setup of testing with Spring, Hibernate, JUnit, Unitils and H2 database
 
