@@ -21,7 +21,7 @@
 	</build>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<version.spring>4.3.24.RELEASE</version.spring>
+		<version.spring>5.3.18</version.spring>
 		<version.unitils>3.3</version.unitils>
 		<version.slf4j>1.6.6</version.slf4j>
 	</properties>
