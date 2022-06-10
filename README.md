@@ -1,18 +1,18 @@
-**Warning** this is a bit outdated and from the pre Spring Boot Starters area. This kind of setup is now almost automagically supported by Spring Data & Spring Boot Starters.
-
-
 inmemorydb-examples
 ===================
 
-An example setup of testing with Spring, Hibernate, JUnit, Unitils and H2 database
+An example setup of testing with Spring, Hibernate, JUnit,H2 database
 
-This Example used Hibernate 4, Spring 4.x, Unitils 3.3, Junit 4 and a H2 Database to perform unit tests on a database layer.
+This example started long time ago with Spring 3 and Hibernate 4. Now many years later, 
+we have Spring Boot and Spring Data JPA which sets up everything for you and makes things easier.
 
-Most of the config can probably be reused in your own project.
+I updated my old example to Spring Boot and Spring Data JPA. See [HELP.md](HELP.md) for links to used frameworks.
 
-Update 
+Note: you can still find the old on in old-hibernate4 branch.
+
+Updates
 ===================
-* Unitils 3 isn't working with Hibernate higher then 4.2 :-( or at least, I couldn't spend the time to get it to work yet. 
+* 2022-06-10 Use latest spring boot and data jpa. Oh yes, and Java 17
 
-* **Waring** Deprecated untill updated and fixed. used dependencies have been update because of CVE's. Not been tested since update ( e.g. H2 & Hibernate, so probably not working anymore)
+
 
